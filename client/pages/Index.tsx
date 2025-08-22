@@ -7,7 +7,14 @@ import {
   Mail,
   MapPin,
 } from "lucide-react";
-
+export default function WhatsAppButton() {
+  const handleWhatsAppClick = () => {
+    // Replace with actual WhatsApp number
+    const phoneNumber = "201023326386";
+    const message = "مرحباً، أود الاستفسار عن منتجات الألومنيوم";
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
+  };
 export default function Index() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -164,6 +171,7 @@ export default function Index() {
               {heroSlides[currentSlide].subtitle}
             </p>
             <button
+            onClick={handleWhatsAppClick}
               className="bg-secondary hover:bg-secondary/90 text-primary px-8 py-4 rounded-lg text-xl font-semibold transition-colors slide-in-up"
               style={{ animationDelay: "0.4s" }}
             >
