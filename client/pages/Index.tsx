@@ -8,14 +8,14 @@ import {
   MapPin,
 } from "lucide-react";
 
-  const handleWhatsAppClick = () => {
-    // Replace with actual WhatsApp number
-    console.log("hi")
-    const phoneNumber = "201023326386";
-    const message = "مرحباً، أود الاستفسار عن منتجات الألومنيوم";
-    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    window.open(url, "_blank");
-  };=
+const handleWhatsAppClick = () => {
+  // Replace with actual WhatsApp number
+  console.log("hi");
+  const phoneNumber = "201023326386";
+  const message = "مرحباً، أود الاستفسار عن منتجات الألومنيوم";
+  const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+  window.open(url, "_blank");
+};
 export default function Index() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
