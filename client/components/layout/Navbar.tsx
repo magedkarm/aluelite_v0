@@ -30,7 +30,7 @@ export default function Navbar() {
             to="/"
             className="text-2xl font-bold text-primary hover:text-primary/90 transition-colors"
           >
-            <img className="w-[90px] h-auto" src={logo} alt="aluelite" />
+            <img className="w-[130px] h-auto" src={logo} alt="aluelite" />
           </Link>
 
           {/* Desktop Navigation */}
