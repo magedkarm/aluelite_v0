@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
+import logo from "../../../public/logo.png";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,7 +30,7 @@ export default function Navbar() {
             to="/"
             className="text-2xl font-bold text-primary hover:text-primary/90 transition-colors"
           >
-            aluelite
+            <img src={logo} alt="aluelite" />
           </Link>
 
           {/* Desktop Navigation */}
